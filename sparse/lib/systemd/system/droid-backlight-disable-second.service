@@ -1,0 +1,12 @@
+[Unit]
+Description=droid-backlight-disable
+After=droid-late-start.service
+Conflicts=shutdown.target actdead.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh /usr/bin/droid/droid-backlight-disable-second.sh
+
+[Install]
+WantedBy=basic.target
