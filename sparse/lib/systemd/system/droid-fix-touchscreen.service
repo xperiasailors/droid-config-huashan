@@ -1,0 +1,12 @@
+[Unit]
+Description=droid-fix-touchscreen
+After=droid-late-start.service
+Conflicts=shutdown.target actdead.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh /usr/bin/droid/droid-fix-touchscreen.sh
+
+[Install]
+WantedBy=basic.target
