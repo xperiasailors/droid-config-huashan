@@ -31,21 +31,16 @@ Requires:
 #- nemo-qtmultimedia-plugins-gstvideotexturebackend
 
 # Add GStreamer v1.0 as standard
-#- gstreamer1.0
-#- gstreamer1.0-plugins-good
-#- gstreamer1.0-plugins-base
-#- gstreamer1.0-plugins-bad
-#- nemo-gstreamer1.0-interfaces
-
-#- gstreamer1.0-droid
+- gstreamer1.0
+- gstreamer1.0-plugins-good
+- gstreamer1.0-plugins-base
+- gstreamer1.0-plugins-bad
+- nemo-gstreamer1.0-interfaces
 
 # This is needed for notification LEDs
 - mce-plugin-libhybris
 
-# This is needed for settings to work
-- jolla-settings-layout
-
-# GPS niceties
+# GPS provider
 - geoclue-provider-hybris-community
 
 ## USB mode controller
