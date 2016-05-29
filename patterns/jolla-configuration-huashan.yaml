@@ -5,7 +5,10 @@ Description: Pattern with packages for huashan configurations
 Name: jolla-configuration-huashan
 Requires:
 - pattern:jolla-hw-adaptation-huashan
-- pattern:jolla-configuration-sfe
+- pattern:jolla-sailfish-applications
+- pattern:jolla-ui-wayland
+# Early stages of porting benefit from these:
+- pattern:sailfish-porter-tools
 
 Summary: Jolla Configuration huashan
 
